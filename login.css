@@ -1,0 +1,190 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #040720;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #040720;
+  color: #39ff14;
+  padding-top: 30px;
+}
+
+.login-container {
+  background-color: #36393f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 320px;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 250px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #202225;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #b9bbbe;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  border: solid;
+  background-color: #040720;
+  color: #39ff14;
+  border-color: #39ff14;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 40px;
+}
+
+#google {
+  padding: 10px;
+  padding-right: 0;
+  background-color: #040720;
+  color: #39ff14;
+  border: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: #39ff14;
+}
+
+#google:hover {
+  background-color: #39ff14;
+  font-weight: bolder;
+  color: #040720;
+}
+
+button:hover {
+  background-color: #39ff14;
+  font-weight: bolder;
+  color: #040720;
+}
+
+.logincontainer {
+  padding: 20px;
+  border-radius: 25px;
+  background-color: #040720;
+  box-shadow: 0px 0px 50px #5c5c5c;
+  height: 500px;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.view {
+  display: none;
+}
+
+#logged-out-view {
+  display: block;
+}
+
+#logged-in-view {
+  display: none;
+}
+
+/*section2*/
+
+#todo-input-el {
+  font-size: 20px;
+  width: 800px;
+  height: 35px; /* Reduce width to 800px */
+  background-color: #40444b; /* Discord input background */
+  color: #dcddde; /* Light gray text */
+  margin-right: 10px; /* Space between the input and the button */
+  padding: 5px 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.todo-btn {
+  height: 50px;
+}
+
+li {
+  padding-left: 25px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between; /* Ensures space between the content and the button */
+  align-items: center; /* Aligns items vertically within the list item */
+  padding: 8px;
+  margin-bottom: 10px; /* Add margin to the bottom of li */
+  background-color: #040720; /* Matching input background */
+  border-radius: 5px;
+  position: relative; /* Needed for proper positioning of absolute elements */
+  width: 100%; /* Ensure li occupies full width */
+}
+
+.checkbox {
+  margin-right: 100px;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 3px solid #39ff14;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox:checked {
+  background-color: #39ff14;
+  color: #39ff14;
+}
+
+.checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

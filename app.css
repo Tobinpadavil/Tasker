@@ -1,0 +1,143 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body, .container {
+    background-color: #040720; /* Discord's dark gray background */
+    color: #ffffff; /* White text color */
+    font-size: 16px; 
+    margin-left: 35px; /* Add margin on the left for everything */
+    margin-top: 50px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input {
+    width: 800px;
+    height: 35px; /* Reduce width to 800px */
+    background-color: #40444b; /* Discord input background */
+    color: #dcddde; /* Light gray text */
+    margin-right: 10px; /* Space between the input and the button */
+    padding: 5px 10px;
+}
+
+#btn-el {
+    background-color: #39FF14; /* Discord's bluish button color */
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #26ff00; /* Darker blue on hover */
+}
+
+ul {
+    list-style: none; /* Removes bullet points */
+    padding: 10px;
+    background-color: #040720; /* Slightly lighter gray for the list */
+    border-radius: 8px;
+    width: 900px; /* Set width to 800px */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
+    margin-top: 30px; /* Add margin to the top of ul */
+}
+
+li {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between; /* Ensures space between the content and the button */
+    align-items: center; /* Aligns items vertically within the list item */
+    padding: 8px;
+    margin-bottom: 10px; /* Add margin to the bottom of li */
+    background-color: #040720; /* Matching input background */
+    border-radius: 5px;
+    position: relative; /* Needed for proper positioning of absolute elements */
+    width: 100%; /* Ensure li occupies full width */
+}
+
+.delete-btn {
+    padding: 6px 10px;
+    background-color: #ed4245; /* Discord red color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely within the li */
+    right: 10px; /* Distance from the right edge of the li */
+}
+
+li:hover .delete-btn {
+    opacity: 1; /* Make the button visible when li is hovered */
+}
+
+.delete-btn:hover {
+    background-color: #bf3336; /* Darker red on hover */
+}
+
+.checkbox {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 3px solid #39FF14;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+.checkbox:checked {
+    background-color: #39FF14;
+    color: #39FF14;
+}
+
+  .checkbox:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+    input {
+        width: 450px;
+        height: 60px;
+    }
+
+    button {
+        height: 60px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: red;
+    }
+
+    .input-field {
+        margin-top: 100px;
+    }
+
+    .input {
+        font-size: 60px;
+    }
+}
